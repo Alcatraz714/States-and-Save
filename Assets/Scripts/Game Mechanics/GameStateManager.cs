@@ -4,6 +4,7 @@ using System.Linq;
 
 public class GameStateManager : MonoBehaviour
 {
+    [SerializeField] private GameObject itemApple;
     public static GameStateManager Instance { get; private set; }
     public GameState gameState;
 
@@ -103,13 +104,7 @@ public class GameStateManager : MonoBehaviour
             }
         };
 
-        // Reactivate item GameObjects in the scene
-        foreach (var item in gameState.items)
-        {
-            GameObject obj = GameObject.Find(item.id);
-            if (obj != null)
-                obj.SetActive(true);
-        }
+        if (itemApple != null) itemApple.SetActive(true);
         Debug.Log("Game state has been reset.");
     }
 }

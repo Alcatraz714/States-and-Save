@@ -19,7 +19,7 @@ public static class SaveLoadService
             Debug.LogWarning("Save file not found");
             return new GameState();
         }
-
+        
         var json = File.ReadAllText(path);
         try
         {
