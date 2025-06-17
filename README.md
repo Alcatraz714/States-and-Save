@@ -2,6 +2,9 @@
 A State and Save Manager logic 
 # Game State Backend System (Unity + C#)
 
+![image](https://github.com/user-attachments/assets/4b22829e-3601-41e6-aa96-d55bbbeb9fce)
+
+
 ## 🧩 Overview
 
 This Unity-based project implements a modular and extensible game state management system. It includes player interaction, item management, environment object state, state persistence (save/load), reset functionality, and a debug UI panel using TextMeshPro.
